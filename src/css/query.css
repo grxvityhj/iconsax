@@ -1,0 +1,45 @@
+@media screen and (max-width: 920px) {
+  .wrap {
+    max-width: 90%;
+  }
+
+  .modal-wrap {
+    width: 90vw;
+  }
+
+  .icon-wrap {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+
+@media screen and (max-width: 805px) {
+  .hero-top {
+    grid-template-columns: 1fr;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .icon-wrap {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+@media screen and (max-width: 704px) {
+  .hero-btn {
+    font-size: var(--f-size-m);
+  }
+
+  .hero--l {
+    font-size: 24px;
+  }
+
+  .icon-wrap {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .icon-wrap {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

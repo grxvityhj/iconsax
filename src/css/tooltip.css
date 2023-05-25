@@ -1,0 +1,28 @@
+/* ***************** */
+/* **** Tooltip **** */
+/* ***************** */
+.tooltip {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  left: 50%;
+  bottom: -1px;
+  padding: 12px 24px;
+  color: #fcfcfc;
+  font-size: 16px;
+  opacity: 0;
+  visibility: hidden;
+  border-radius: var(--round);
+  background-color: #222;
+  transform: translateX(-50%);
+  transition: all var(--duration);
+  z-index: 99999;
+}
+
+.tooltip.active {
+  opacity: 1;
+  visibility: visible;
+  bottom: 96px;
+}
+/* ***************** */
