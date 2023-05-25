@@ -61,6 +61,7 @@
   transition: all var(--duration);
 }
 
+.hero-btn:hover,
 .hero-btn:active {
   transform: translate(2%, 4%);
 }
