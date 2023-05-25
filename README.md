@@ -66,4 +66,4 @@ This project fully supports `linear` and `bold` style only.
 
 ## License
 
-[MIT License](https://github.com/grxvityhj/iconsax-prev/blob/main/LICENSE)
+[MIT License](https://github.com/grxvityhj/iconsax/blob/main/LICENSE)
