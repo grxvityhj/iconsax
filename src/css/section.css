@@ -99,25 +99,6 @@
   gap: 24px;
 }
 
-.section-toggle-btn {
-  width: 48px;
-  height: 48px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transform: rotate(0);
-  transition: all var(--duration);
-}
-
-.section-toggle-btn svg {
-  width: 18px;
-  height: 18px;
-}
-
-.section-wrap.active .section-toggle-btn {
-  transform: rotate(180deg);
-}
-
 .section-title-wrap {
   display: flex;
   justify-content: space-between;
@@ -141,17 +122,9 @@
 }
 
 .icon-wrap {
-  height: 0;
   display: grid;
-  grid-template-columns: repeat(7, 1fr);
+  grid-template-columns: repeat(7, minmax(0, 1fr));
   gap: 18px;
-  overflow: hidden;
-  transition: all var(--duration);
-}
-
-.icon-wrap.active {
-  height: 100%;
-  overflow: visible;
   transition: all var(--duration);
 }
 

@@ -8,7 +8,7 @@
   }
 
   .icon-wrap {
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(6, minmax(0, 1fr));
   }
 }
 
@@ -20,7 +20,7 @@
   }
 
   .icon-wrap {
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(5, minmax(0, 1fr));
   }
 }
 
@@ -33,8 +33,12 @@
     font-size: 24px;
   }
 
+  .stroke-label {
+    display: none;
+  }
+
   .icon-wrap {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
   .section-desc {
@@ -44,6 +48,6 @@
 
 @media screen and (max-width: 540px) {
   .icon-wrap {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }

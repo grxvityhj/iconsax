@@ -25,6 +25,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  word-break: break-all;
 }
 
 a:link,
@@ -277,7 +278,7 @@ body {
 
 .stroke-input {
   width: 80px;
-  padding: 0 8px;
+  padding: 8px 18px;
   text-align: center;
 }
 /* **************** */
