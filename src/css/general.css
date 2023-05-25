@@ -8,7 +8,7 @@
   --c-font: #222;
   --c-sub: #eee;
   --c-blockq: #f7f7f7;
-  --c-primary: #025464;
+  --c-primary: #222;
 
   --f-size-s: 12px;
   --f-size-m: 14px;
@@ -58,6 +58,7 @@ blockquote {
 }
 
 input {
+  font-weight: 700;
   font-family: inherit;
   border: none;
   outline: none;
@@ -204,21 +205,22 @@ body {
 
 
 */
-/* ******************** */
-/* **** Controller **** */
-/* ******************** */
-.controller {
+/* **************** */
+/* **** Header **** */
+/* **************** */
+.header {
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 16px;
+  padding: 18px 36px;
+  position: sticky;
+  position: -webkit-sticky;
+  top:0;
+  background-color: var(--c-bg);
+  z-index: 9;
 }
-
-.input-label {
-  margin-left: 6px;
-  margin-bottom: 12px;
-}
-/* ******************** */
+/* **************** */
 /*
 
 
@@ -230,18 +232,23 @@ body {
 /* **************** */
 /* **** Search **** */
 /* **************** */
+.search-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  padding: 6px 12px;
+  border: 2.5px solid var(--c-general);
+  border-radius: var(--round);
+}
+
+.search-icon svg {
+  width: 16px;
+  height: 16px;
+}
+
 .search-input {
-  width: 100%;
-  height: 40px;
   display: block;
-  padding: 0 18px;
-  font-size: var(--f-size-l);
-  font-weight: 700;
-  font-family: inherit;
-  border: 3px solid var(--c-general);
-  border-radius: var(--round-l);
-  background: none;
-  background-color: var(--c-wrap);
 }
 /* **************** */
 /*
@@ -251,41 +258,66 @@ body {
 
 
 */
-/* *********************** */
-/* **** Customization **** */
-/* *********************** */
-.custom-wrap > div {
+/* **************** */
+/* **** Stroke **** */
+/* **************** */
+.stroke-wrap {
   display: flex;
+  align-items: center;
+  border: 2.5px solid var(--c-general);
+  border-radius: 100px;
+  overflow: hidden;
+}
+
+.stroke-label {
+  padding: 8px 18px;
+  color: #eee;
+  background-color: var(--c-general);
+}
+
+.stroke-input {
+  width: 80px;
+  padding: 0 8px;
+  text-align: center;
+}
+/* **************** */
+/*
+
+
+
+
+
+*/
+/* ************* */
+/* **** Tab **** */
+/* ************* */
+.tab {
+  width: fit-content;
+  margin: 0 auto;
+  padding: 12px 18px;
+  border-radius: 1000px;
+  background-color: var(--c-wrap);
+}
+
+.tab-wrap {
+  display: flex;
+  justify-content: center;
   align-items: center;
   gap: 8px;
 }
 
-.custom-input {
-  width: 130px;
-  height: 40px;
-  padding: 0 12px;
-  font-size: var(--f-size-l);
-  font-family: inherit;
-  font-weight: 700;
-  text-align: center;
-  border-radius: var(--round);
-  border: 3px solid var(--c-general);
-  background-color: var(--c-wrap);
+.tab-wrap > div {
+  padding: 8px 16px;
+  transition: all var(--duration);
+  cursor: pointer;
 }
 
-.custom-btn {
-  height: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0 12px;
-  color: var(--c-sub);
-  font-weight: 700;
-  text-transform: uppercase;
-  border-radius: var(--round);
-  background-color: var(--c-general);
+.tab--active {
+  color: #eee;
+  border-radius: 1000px;
+  background-color: var(--c-primary);
 }
-/* *********************** */
+/* ************* */
 /*
 
 

@@ -55,14 +55,14 @@ Example for `linear` type with `stroke-width` `2`:
 | stroke-width | `string` | no       | `1.5`             |
 | icon         | `string` | yes      | `(its icon name)` |
 
-👉 **stroke** is set to `currentColor` by default.\
+👉 **stroke** and **fill** is set to `currentColor` by default.\
 👉 No styles are applied.
 
 ### Disclaimer
 
 **I do not own any of the icons**. All rights belong to Vuesax.
 
-This project fully supports `linear` style only. (Will be adding `bold` style soon.)
+This project fully supports `linear` and `bold` style only.
 
 ## License
 

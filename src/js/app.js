@@ -64,3 +64,26 @@ document.addEventListener('scroll', e => {
 });
 
 topBtnHandler();
+
+const tabContainer = document.querySelector('.tab');
+
+tabContainer.addEventListener('click', e => {
+  const tab = e.target.closest('.tab-item');
+  const tabAll = document.querySelectorAll('.tab-item');
+  const sectionAll = document.querySelectorAll('.section-icon');
+
+  if (!tab) return;
+
+  const nextTab = tab.textContent.trim();
+
+  for (const item of tabAll) {
+    item.classList.remove('tab--active');
+  }
+
+  for (const section of sectionAll) {
+    section.classList.remove('section--active')
+  }
+
+  document.querySelector(`.tab--${nextTab}`).classList.add('tab--active');
+  document.querySelector(`.section--${nextTab}`).classList.add('section--active');
+})

@@ -36,6 +36,10 @@
   .icon-wrap {
     grid-template-columns: repeat(4, 1fr);
   }
+
+  .section-desc {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 540px) {
