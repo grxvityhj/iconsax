@@ -138,6 +138,23 @@ tabContainer.addEventListener('click', e => {
   generator();
 })
 
+const btnIconAll = document.querySelectorAll('.modal-wrap .iconsax');
+
+for (const icon of btnIconAll) {
+  const brand = false;
+  const iconLabel = icon.getAttribute('icon').trim();
+  const iconType = icon.getAttribute('type')
+    ? icon.getAttribute('type').trim()
+    : 'linear';
+  const iconWidth = icon.getAttribute('stroke-width')
+    ? icon.getAttribute('stroke-width')
+    : '1.5';
+
+  const args = [icon, iconType, iconLabel, iconWidth, brand];
+
+  generateIconsax(...args);
+}
+
 generator();
 modalCloser();
 topBtnHandler();
