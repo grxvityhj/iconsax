@@ -141,4 +141,4 @@ tabContainer.addEventListener('click', e => {
 generator();
 modalCloser();
 topBtnHandler();
-generateIconsax(topBtn, 'chevron-up', 'linear', '2', false);
+generateIconsax(topBtn, 'linear', 'chevron-up', '2', false);
