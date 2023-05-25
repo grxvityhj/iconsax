@@ -85,9 +85,9 @@ const modalCloser = () => {
 
 
 const clipboard = new Clipboard('.modal-btn');
+const topBtn = document.querySelector('.top-btn');
 
 const topBtnHandler = () => {
-  const topBtn = document.querySelector('.top-btn');
 
   if (!topBtn) return;
 
@@ -141,3 +141,4 @@ tabContainer.addEventListener('click', e => {
 generator();
 modalCloser();
 topBtnHandler();
+generateIconsax(topBtn, 'chevron-up', 'linear', '2', false);
