@@ -1,6 +1,8 @@
 'use strict';
 
 const generateIconsax = async function (icon, type, label, iconWidth, brand) {
+  if (label === '') return;
+    
   const url = `https://grxvityhj.github.io/iconsax/icon/${
     brand ? 'brand/' : ''
   }${type}/${label}.svg`;
